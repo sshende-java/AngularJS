@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>BasicAngular Skeleton</title>
+</head>
+<body  ng-init="a=5;b=10;nos=[1,2,3,4,5,6]">
+    {{5+8}}
+    <p>Value of a :<span ng-bind="a"></span></p>
+    <p>Value of b :<span ng-bind="b"></span></p>
+    <p>Value of array at 4 :<span ng-bind="nos[3]"></span></p>
+</body>
+</html>

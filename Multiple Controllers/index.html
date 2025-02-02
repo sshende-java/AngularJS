@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicAngular Skeleton</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="studentController.js"></script>
+</head>
+
+<body>
+    <div ng-controller="StudentController">
+        <p>Firstname is {{firstname}}</p>
+        <p>Lastname is {{lastname}}</p>
+        <p>FullName is <span ng-bind="getFullName()"></span></p>
+        <p ng-show="isSpy">Codename is {{codename}}</p>
+    </div>
+
+    <div ng-include="'template.html'">
+        <!-- this will include part of other page in this webpage  ORR you can also create custom directive tag and inject that -->
+    </div>  
+     <customtag1></customtag1>
+     <customtag2></customtag2>
+
+</body>
+
+</html>
